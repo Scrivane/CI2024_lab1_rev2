@@ -2,7 +2,7 @@
 
 Computational Intelligence - Laboratory 1
 
-In order to solve the set covering problem I have implemented a solution with a Simulated Annealing algorithm. These are the results with `initial_temp=1000.0, cooling_rate=0.995, min_temp=1e-6, max_iter=20_000`, perhaps it could be better decrease the min_temp stop condition in the last three cases, as to be able to observe the settlement of the fitness function as the number of iterations increases.
+In order to solve the set covering problem I have implemented a solution with a Simulated Annealing algorithm. These are the results with `initial_temp=1000.0, cooling_rate=0.995, min_temp=1e-6, max_iter=20_000`, perhaps it could be better decrease the min_temp stop condition in the last three cases, as to be able to observe the settlement of the cost function as the number of iterations increases.
 
 ## Universe size = 100, sets number = 10, density = 0.2
 
