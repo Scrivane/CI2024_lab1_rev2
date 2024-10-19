@@ -1,8 +1,8 @@
-Great job! Your alghhoritm is  a correct implementation of simulated anneling for the setcover problem!
+Great job! Your alghhoritm is  a correct implementation of simulated anneling for the setcover problem.
 
 Here are some suggestion for further improving:
 You can use a different fuction to check if a solution is valid or not . Iterating over each taken element of the solution and stopping early if you see that all sets are covered, you can slash executions time by a factor of 10.
 (Although that doesn't improve number of calls to finess fuction or lower the minimum cost founds , It's useful to do faster test in future).
 Looking at your graphs, it looks like that for small universe sizes your fuction get rapidly to a plateaux , for big ones it never gets there(As you also correctly observed in the README) . A way to change that is by
 changing maximum number of steps(max_iter) using the universe size information (bigger universe, more steps and smaller universe, less steps)  and dropping the early exit for low temperature. 
-Just decreasing the min_temp stop condition in the last three( as you suggested in the readme) cases won't work because you'll get anyway to the  max_iter=20_000 .
+Just decreasing the min_temp stop condition in the last three cases( as you suggested in the readme) won't work because you'll get anyway to the maximum number of steps(max_iter=20_000) .
