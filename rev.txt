@@ -1,8 +1,8 @@
-Great job! Your alghhoritm is  a correct implementation of simulated anneling for the setcover problem.
+Great job! Your algorithm is  a correct implementation of simulated annealing for the set cover problem.
 
-Here are some suggestion for further improving:
-You can use a different fuction to check if a solution is valid or not . Iterating over each taken element of the solution and stopping early if you see that all sets are covered, you can slash executions time this way.
-(Although that doesn't improve number of calls to fitness fuction or lower the minimum cost found , It's useful to do faster test in future).
-Looking at your graphs, it looks like that for small universe sizes your fuction get rapidly to a plateaux , for big ones it never gets there (as you also correctly observed in the README) . A way to change that is by
+Here are some suggestions for further improving:
+You can use a different function to check if a solution is valid or not . Iterate over each taken element of the solution and stop early if you see that all sets are covered, you can slash execution time this way.
+(Although that doesn't improve number of calls to fitness function or lower the minimum cost found, it's useful to do faster test in future).
+Looking at your graphs, it looks like that for small universe sizes your function gets rapidly to a plateaux , for big ones it never gets there (as you also correctly observed in README) . A way to change that is by
 changing maximum number of steps(max_iter) using the universe size information (bigger universe, more steps and smaller universe, less steps)  and dropping the early exit for low temperature. 
-Only decreasing the min_temp stop condition in the last three cases( as you suggested in the readme) won't work because you'll get anyway to the maximum number of steps(max_iter=20_000) .
+Only decreasing the min_temp stop condition in the last three cases( as you suggested in the README) won't work because you'll get anyway to the maximum number of steps(max_iter=20_000) .
